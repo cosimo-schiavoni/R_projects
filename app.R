@@ -15,7 +15,7 @@ ui <- pageWithSidebar(
                   "Beijing" = "Beijing")),
     
     # Input: Checkbox for whether outliers should be included ----
-    checkboxInput("outliers", "Show outliers", TRUE)
+    checkboxInput()
     
   ),
   
