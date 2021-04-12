@@ -12,10 +12,10 @@ ui <- pageWithSidebar(
     # Input: Selector for variable to plot against mpg ----
     selectInput("variable", "Variable:", 
                 c("Shanghai" = "Shanghai",
-                  "Beijing" = "Beijing")),
+                  "Beijing" = "Beijing"))
     
     # Input: Checkbox for whether outliers should be included ----
-    checkboxInput()
+
     
   ),
   
