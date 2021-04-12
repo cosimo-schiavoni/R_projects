@@ -4,18 +4,21 @@ library(shiny)
 ui <- pageWithSidebar(
   
   # App title ----
-  headerPanel("EKC CURVE CHINA"),
+  headerPanel("EKC CURVE IN CHINA"),
   
   # Sidebar panel for inputs ----
-  sidebarPanel(),
+  sidebarPanel(
+    
+    # Input: Selector for variable to plot against mpg ----
+    selectInput("variable", "Variable:", 
+                c("Shanghai" = "Shanghai",
+                  "Beijing" = "Beijing")),
+    
+    # Input: Checkbox for whether outliers should be included ----
+    checkboxInput("outliers", "Show outliers", TRUE)
+    
+  ),
   
   # Main panel for displaying outputs ----
   mainPanel()
 )
-
-# Define server logic to plot various variables against mpg ----
-server <- function(input, output) {
-  
-}
-
-shinyApp(ui, server)
