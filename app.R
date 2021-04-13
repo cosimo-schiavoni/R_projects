@@ -10,9 +10,10 @@ ui <- pageWithSidebar(
   sidebarPanel(
     
     # Input: Selector for variable to plot against mpg ----
-    selectInput("variable", "Variable:", 
+    selectInput("Province", "Variable:", 
                 c("Shanghai" = "Shanghai",
-                  "Beijing" = "Beijing"))),  
+                  "Beijing" = "Beijing"))), 
+    sliderInput("num", "Number:",min = 0, max = 5,step=1,value=c(1,2)),
     
     # Main panel for displaying outputs ----
     mainPanel()
