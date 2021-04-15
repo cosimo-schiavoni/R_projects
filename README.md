@@ -5,7 +5,7 @@ READ ME
 
 The  project contains a shiny app made with R.
 The aim of the project is to create an easy and remotely accessible tool for Air quality analysis in China.
-The app performs a dinamically configurable geogrphically weighted linear regression (GWLR), which relates the effects of economical phenomena to air quality emissions/density
+The app performs a dinamically configurable geogrphically weighted linear regression (GWLR), which relates the effects of economical phenomena to air quality emissions/concentration
 indexes.
 The Linear regression is geographically weighted in the sense that the user can choose the number of closest provinces to take into consideration (by defining a bandwidth),
 which have an impact on data basing on their geographical distance with respect to the selected province (basing on the application of a kernel bivariate adaptative funcion).
