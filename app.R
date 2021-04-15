@@ -1,13 +1,3 @@
-install.packages('shiny', dependencies = TRUE)
-install.packages('ggplot2', dependencies = TRUE)
-install.packages('DT', dependencies = TRUE)
-install.packages('spdep', dependencies = TRUE)
-install.packages('rgdal', dependencies = TRUE)
-install.packages('rgeos', dependencies = TRUE)
-install.packages('GWmodel', dependencies = TRUE)
-install.packages('plm', dependencies = TRUE)
-install.packages('plotly', dependencies = TRUE)
-
 library(shiny)
 library(ggplot2)
 library(DT)
