@@ -28,6 +28,19 @@ install.packages('plotly', dependencies = TRUE)
 
 In order to run run the code, make sure to possess the right library set.
 
+***Navigation
+
+On the right-hand side, the app is composed by 2 main analysis components:
+1. Regression Result Box: Shows the statistical result of the linear regression between the selected dependent and independent variables;
+2. Box Plot: shows a graphical representation of the relationship between the selected variables.
+
+On the left-hand side, the prompt commands are available:
+1. Selection of the Province: the user can select the province of interest;
+2. Selection of the period: the user can restrict the analysis to a limited time period;
+3. Selection of the Bandwidth: the bandwidth is used as an internal parameter in order to define the geographical extension of the weighting Kernel Function and it defines the                                  number of closest provinces to be included. In this regard, closest provinces have higher weights on data as far as they affect more the           
+                               environmental conditions of the selected province.
+4. Selecrtion of layout components: the user can decide the color of lines and dots, show/hide the interval confident range.
+
 ***Data Origin (2000 - 2015):
 
 Official data from 22 Chinese provinces (Hebei, Shanxi. Liaoning, Jilin, Heilongjiang, Jiangsu,Zhejiang, Anhui, Fujian, Jiangxi, Shandong, Henan, Hubei, Hunan, Guangdong,
@@ -39,7 +52,7 @@ Hainan, Sichuan, Guizhou, Yunnan, Shaanxi, Gansu, and Qinghai), 5 autonomous reg
     Data is assumed to be correct and no need of adjustment is required for this project.The expectations could foresee both a positive and a negative effect on the environment. 
     The positive effect could be due to the fact that higher population density normally requires higher levels of resources and energy consumption, hence resulting in 
     environment degradation (Scale Effect). On the contrary, higher population density could create more social concern, hence resulting in the establishment of more stringent
-    environment regulations, which should normally reduce the environmental pressure (S.F. Wang et al. 2015).
+    environment regulations, which should normally reduce the environmental pressure.
 
 2. Real Gross Regional Product Per Capita (Real GRPPC): 
       official data about the Chinese economic performance (Gross Regional Product, 100 million Yuan) at a provincial level is provided by China Statistical Yearbook. 
@@ -96,7 +109,7 @@ the consumption (10000 tons) of 8 main energy sources at a provincial level:
       on the domestic supply. Normally per capita income and trade openness are supposed to be correlated: the more the level of trade openness rises, the more capita income 
       increases, but following a decreasing path in time (Online Trade Outcomes Indicators – The world Bank, 2013). Evidence of positive correlations have been shoved also
       between TO and Productivity, basing this theory on the main assumption that an opened market causes the spread of the competition, resulting hence in a higher output/input
-      relationship (JaeBin Ahn and Romain Duval, 2017). Despite these phenomena, the introduction of the Trade Openness index is not new, for instance it can be found in the
+      relationship. Despite these phenomena, the introduction of the Trade Openness index is not new, for instance it can be found in the
       research carried out by J. He and H. Wang in 2012. The expectation is strictly related to the one presented for FDI. In fact, given the above described incentivizing 
       mechanism for outsourcing a production chain to developing countries, it can be expected that then the output would be traded with other economies. This phenomenon seems
       to particularly fit Chinese economic model, which is the first exporter in the world. The main concern is that China could have gained high trade margins by exploiting 
@@ -118,17 +131,3 @@ the consumption (10000 tons) of 8 main energy sources at a provincial level:
       extremely rich endowment in labor force suggests the specialization in less-polluting industries (basing on the comparative advantage hypothesis). This can be used as an 
       index to measure the Composition Effect, which is the share of dirty goods on the total output, basing on the assumption that higher capital intensity should lead to more-
       pollution intensity industries.
-
-***Navigation
-
-On the right-hand side, the app is composed by 2 main analysis components:
-1. Regression Result Box: Shows the statistical result of the linear regression between the selected dependent and independent variables;
-2. Box Plot: shows a graphical representation of the relationship between the selected variables.
-
-On the left-hand side, the prompt commands are available:
-1. Selection of the Province: the user can select the province of interest;
-2. Selection of the period: the user can restrict the analysis to a limited time period;
-3. Selection of the Bandwidth: the bandwidth is used as an internal parameter in order to define the geographical extension of the weighting Kernel Function and it defines the                                  number of closest provinces to be included. In this regard, closest provinces have higher weights on data as far as they affect more the           
-                               environmental conditions of the selected province.
-4. Selecrtion of layout components: the user can decide the color of lines and dots, show/hide the interval confident range.
-
